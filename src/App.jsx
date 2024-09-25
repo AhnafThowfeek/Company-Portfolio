@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Services from './components/Services';
@@ -18,8 +19,9 @@ function App() {
       <Services/>
       <Projects/>
       <MyFooter/>
-    
+      
     </>
+    
   
   )
 }
