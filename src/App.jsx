@@ -12,14 +12,14 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div id='app' className='text-black'>
       <Navbar/>
       <Home/>
       <About/>
       <Services/>
       <Projects/>
       <MyFooter/>
-    </>
+    </div>
   )
 }
 

@@ -8,12 +8,24 @@ export default {
   theme: {
     extend: {
       color:{
+        'white': '#ffffff',
+        'black': '#1c1c1c',
         'silver':'#F5F7FA',
         'dGrey':'#4D4D4D',
-        'primary':'#1974B8',
-        'gray':'#717171',
+        'primary':'#0e76bf',
+        'gray': {
+          '400': '#a3a3a3',
+        },
         'gray900':'#18191F',
       },
+      textColor: {
+        'primary':'#0e76bf',
+        'black': '#1c1c1c',
+        'white': '#ffffff',
+        'gray': {
+          '400': '#a3a3a3',
+        },
+      }
     },
   },
   plugins: [require('flowbite/plugin')],

@@ -53,7 +53,7 @@ const Navbar = () => {
                 </ul>
 
                 <div className='space-x-12 hidden lg:flex items-center'>
-                    <button href='Contact.jsx' className='bg-sky-600 text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutral-700' >Get In Touch</button>
+                    <button href='Contact.jsx' className='btn-primary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutral-700' >Get In Touch</button>
                 </div>
 
                 <div className='md:hidden'>

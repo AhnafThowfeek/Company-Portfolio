@@ -15,8 +15,8 @@ const Home = () => {
                 </div>
 
                 <div className='md:w-1/2'>
-                  <h1 className='text-5xl font-semibold mb-4 text-neutral-900 md:w-4/4 leading-sung'>{slogan1}<span className='text-sky-600 leading-sung'><br/>{slogan2}</span></h1>
-                  <p className='text-neutral-400 text-base mb-8'>We believe that behind every successful business is a strong technological foundation. At Innenta Solutions, we partner with businesses to deliver innovative software that bridges the gap between their vision and digital reality, helping them unlock new opportunities and drive sustainable growth. </p>
+                  <h1 className='text-5xl font-semibold mb-4 md:w-4/4 leading-sung'>{slogan1}<span className='text-primary leading-sung'><br/>{slogan2}</span></h1>
+                  <p className='text-gray-400 text-base mb-8'>We believe that behind every successful business is a strong technological foundation. At Innenta Solutions, we partner with businesses to deliver innovative software that bridges the gap between their vision and digital reality, helping them unlock new opportunities and drive sustainable growth. </p>
                   <button className='btn-primary'>Get In Touch</button>
                 </div>
             </div>        

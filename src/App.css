@@ -17,3 +17,25 @@ header{
   cursor: pointer;
 }
 
+/* Top Sliding Animate */
+.about .card .card-front{
+  transform: translateY(0%);
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}
+
+.about .card:hover .card-front{
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.about .card .card-description{
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.about .card:hover .card-description{
+  opacity: 1;
+  transform: translateY(0%);
+}
