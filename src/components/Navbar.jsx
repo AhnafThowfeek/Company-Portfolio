@@ -41,7 +41,7 @@ const Navbar = () => {
 
 
   return (
-    <header className='w-full bg-white md:bg-transparent fixed top-0 left-0 right-0'>
+    <header className='w-full bg-white fixed top-0 left-0 right-0'>
         <nav className={`py-4 lg:px-14 px-4 ${isSticky ? "sticky top-0 left-0 right-0 border bg-white duration-300" : ""}`}>
             <div className='flex justify-between items-center text-base gap-8'>
                 <a href=''><img src={logo1} alt='' className='w-[70px] h-[70px]'></img></a>

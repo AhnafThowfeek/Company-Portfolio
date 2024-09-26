@@ -19,10 +19,7 @@ function App() {
       <Services/>
       <Projects/>
       <MyFooter/>
-      
     </>
-    
-  
   )
 }
 
