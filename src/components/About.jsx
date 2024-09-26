@@ -15,7 +15,7 @@ const About = () => {
         </div>
         <div className='mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12'>      
             {aboutUs.map(about =>
-                <div key={about.id} className='card relative flex items-center justify-center h-full px-4 py-8 text-center md:w-[300px] mx-auto md:h-[25rem] rounded-md shadow cursor-pointer hover:border-b-4 hover:border-sky-600 group'>
+                <div key={about.id} className='card relative flex items-center justify-center h-full px-4 py-8 text-center md:w-[300px] mx-auto md:h-[25rem] rounded-md shadow cursor-pointer hover:border-b-4 hover:border-sky-600 overflow-hidden'>
                     <div className='card-front absolute'>
                         <div className='h-40 w-40  mx-auto'><img src={about.image} alt={`${about.name}`} className='rounded-tl-2xl rounded-br-2xl'/></div>
                         <h4 className='text-2xl font-bold text-black mt-14 mb-2 px-2'>{about.name}</h4>
