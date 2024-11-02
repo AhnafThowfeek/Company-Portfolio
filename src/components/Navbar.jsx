@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import logo1 from '../assets/logo1.png';
-import { Link } from 'react-scroll';
-
+import { Link as ScrollLink } from 'react-scroll';
+import {Link} from 'react-router-dom';
 import { FaXmark, FaBars } from 'react-icons/fa6';
 
 
@@ -48,12 +48,12 @@ const Navbar = () => {
 
                 <ul className='md:flex space-x-12 hidden'>
                     {
-                        navItems.map(({link,path}) => <Link to={path} spy={true} smooth={true} offset={-100} key={path} className='block text-base text-gray-900 hover:text-sky-600 first:font-medium cursor-pointer'>{link}</Link>)
+                        navItems.map(({link,path}) => <ScrollLink to={path} spy={true} smooth={true} offset={-100} key={path} className='block text-base text-gray-900 hover:text-sky-600 first:font-medium cursor-pointer'>{link}</ScrollLink>)
                     }
                 </ul>
 
                 <div className='space-x-12 hidden lg:flex items-center'>
-                    <button href='Contact.jsx' className='btn-primary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutral-700' >Get In Touch</button>
+                    <Link to='/contact' className='btn-primary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutral-700' >Get In Touch</Link>
                 </div>
 
                 <div className='md:hidden'>

@@ -33,7 +33,7 @@ const Services = () => {
             <h2 className='text-4xl text-neutral-700 font-semibold mb-2'>Our Clients</h2>
             <p className='text-neutral-400'>We have working with some fortune 10+ clients</p>
 
-            <div className="w-[80px] h-[80px] my-12 flex flex-warp justify-between items-center gap-14">
+            <div className="w-[80px] h-[80px] my-12 mx-[10rem] flex flex-warp justify-between items-center gap-14">
                 <img src="/src/assets/1.png" alt=""/>
                 <img src="/src/assets/2.png" alt=""/>
                 <img src="/src/assets/3.png" alt=""/>

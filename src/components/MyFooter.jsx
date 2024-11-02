@@ -16,10 +16,10 @@ const MyFooter = () => {
           <div>
             <Footer.Title title="Company" />
             <Footer.LinkGroup  col >
-              <Footer.Link href='home'>Home</Footer.Link>
-              <Footer.Link href="about">About</Footer.Link>
-              <Footer.Link href="services">Services</Footer.Link>
-              <Footer.Link href="projects">Projects</Footer.Link>
+              <Footer.Link to='/home'>Home</Footer.Link>
+              <Footer.Link to='/about'>About</Footer.Link>
+              <Footer.Link to='/services'>Services</Footer.Link>
+              <Footer.Link to='/projects'>Projects</Footer.Link>
             </Footer.LinkGroup>
           </div>
           <div>
