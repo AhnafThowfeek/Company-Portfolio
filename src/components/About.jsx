@@ -3,8 +3,8 @@ import React from 'react';
 
 const About = () => {
     const aboutUs = [
-        {id:1, image:"/src/assets/pro.JPG", name: "Mulhima Jawahir", title: "Co-Founder in Innenta Solutions, Lead Project Manager & Client Handler.", description:""},
-        {id:2, image:"/src/assets/pro.JPG", name: "Ahnaf Thowfeek", title: "Co-Founder in Innenta Solutions, Lead Project Developer.", description:""},
+        {id:1, image:"/src/assets/pro.JPG", name: "Mulhima Jawahir", title: "Co-Founder in Innenta Solutions, Lead Project Manager & Client Handler.", description:"As one of the founders and project leader at Innenta Solutions, I am dedicated to guiding our team in delivering high-quality web development and software solutions. I work closely with clients to understand their needs, ensuring that we provide innovative technology that drives their success. My goal is to make every client experience smooth, productive, and results-focused."},
+        {id:2, image:"/src/assets/pro.JPG", name: "Ahnaf Thowfeek", title: "Co-Founder in Innenta Solutions, Lead Project Developer.", description:"As one of the founders and developers at Innenta Solutions, I am passionate about delivering high-quality web development and software solutions. We are committed to providing innovative technology that drives our clients' success. My goal is to ensure a seamless and productive experience for every client we serve."},
         {id:3, image:"/src/assets/pro.JPG", name: "Asela Pasindu Dias", title: "Co-Founder in Innenta Solutions, Lead Project Manager and Developer.", description:"Having seen many companies struggle to integrate technology into their business models, my vision is to bridge this gap and help them thrive. At Innenta Solutions, we are dedicated to helping businesses flourish through technological innovation."},
     ]
 
