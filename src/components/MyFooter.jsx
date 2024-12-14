@@ -1,7 +1,7 @@
 import React from 'react';
 import logo1 from '../assets/logo1.png';
 import { Footer } from "flowbite-react";
-import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsGithub, BsInstagram, BsTwitterX } from "react-icons/bs";
 
 const MyFooter = () => {
   return (
@@ -23,8 +23,9 @@ const MyFooter = () => {
           <div>
             <Footer.Title title="Support" />
             <Footer.LinkGroup col>
-              <Footer.Link href="#">Twitter</Footer.Link>
-              <Footer.Link href="#">Facebook</Footer.Link>
+              <Footer.Link href="https://x.com/innentasolution">Twitter</Footer.Link>
+              <Footer.Link href="https://facebook.com/innentasolutions">Facebook</Footer.Link>
+              <Footer.Link href="https://www.instagram.com/innenta_solutions">Instagram</Footer.Link>
               <Footer.Link href="#">Contact Us</Footer.Link>
             </Footer.LinkGroup>
           </div>
@@ -41,10 +42,9 @@ const MyFooter = () => {
         <div className="w-full bg-white px-4 py-6 lg:flex lg:justify-around">
           <Footer.Copyright href="/" className='text-center lg:text-auto' by="Innenta" year={2024} />
           <div className="mt-4 flex space-x-6 sm:mt-0 justify-center lg:justify-start">
-            <Footer.Icon href="#" icon={BsFacebook} />
-            <Footer.Icon href="#" icon={BsInstagram} />
-            <Footer.Icon href="#" icon={BsTwitter} />
-            <Footer.Icon href="#" icon={BsGithub} />
+            <Footer.Icon href="https://facebook.com/innentasolutions" icon={BsFacebook} />
+            <Footer.Icon href="https://www.instagram.com/innenta_solutions" icon={BsInstagram} />
+            <Footer.Icon href="https://x.com/innentasolution" icon={BsTwitterX} />
           </div>
         </div>
       </div>
