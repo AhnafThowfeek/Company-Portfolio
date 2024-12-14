@@ -7,25 +7,22 @@ const MyFooter = () => {
   return (
     <Footer bgDark>
       <div className="w-full">
-        <div className="grid w-full grid-cols-2 gap-8 px-6 py-8 md:grid-cols-5">
-
+        <div className="flex w-full justify-around px-6 py-8 flex-col md:flex-row items-center text-center lg:text-start gap-[40px] [&>div]:flex [&>div]:flex-col [&>div]:justify-center">
           <div>
-            <a href=''><img src={logo1} alt='' className='w-[70px] h-[70px]'></img></a>
-
+            <a href='/'><img src={logo1} alt='' className='h-[140px]'></img></a>
           </div>
           <div>
             <Footer.Title title="Company" />
             <Footer.LinkGroup  col >
-              <Footer.Link to='/home'>Home</Footer.Link>
-              <Footer.Link to='/about'>About</Footer.Link>
-              <Footer.Link to='/services'>Services</Footer.Link>
-              <Footer.Link to='/projects'>Projects</Footer.Link>
+              <Footer.Link href='#home'>Home</Footer.Link>
+              <Footer.Link href='#about'>About</Footer.Link>
+              <Footer.Link href='#services'>Services</Footer.Link>
+              <Footer.Link href='#projects'>Projects</Footer.Link>
             </Footer.LinkGroup>
           </div>
           <div>
-            <Footer.Title title="help center" />
+            <Footer.Title title="Support" />
             <Footer.LinkGroup col>
-              <Footer.Link href="#">Discord Server</Footer.Link>
               <Footer.Link href="#">Twitter</Footer.Link>
               <Footer.Link href="#">Facebook</Footer.Link>
               <Footer.Link href="#">Contact Us</Footer.Link>
@@ -41,14 +38,13 @@ const MyFooter = () => {
           </div>
         
         </div>
-        <div className="w-full bg-white px-4 py-6 sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="#" by="Flowbite™" year={2022} />
-          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+        <div className="w-full bg-white px-4 py-6 lg:flex lg:justify-around">
+          <Footer.Copyright href="/" className='text-center lg:text-auto' by="Innenta" year={2024} />
+          <div className="mt-4 flex space-x-6 sm:mt-0 justify-center lg:justify-start">
             <Footer.Icon href="#" icon={BsFacebook} />
             <Footer.Icon href="#" icon={BsInstagram} />
             <Footer.Icon href="#" icon={BsTwitter} />
             <Footer.Icon href="#" icon={BsGithub} />
-            
           </div>
         </div>
       </div>

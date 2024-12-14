@@ -5,12 +5,20 @@ body{
   font-family: 'Inter', sans-serif;
 }
 
+a.active{
+  @apply text-sky-600 font-bold;
+}
+
+.mobile a.active{
+  @apply text-black font-bold;
+}
+
 header{
   z-index: 10001 !important;
 }
 
 .btn-primary{
-  @apply px-7 py-2 bg-sky-600 text-white hover:bg-neutral-700 transition-all duration-300 hover:-translate-y-4;
+  @apply px-4 py-2 bg-sky-600 text-white hover:bg-neutral-700 rounded transition-all duration-300 hover:-translate-y-1;
 }
 
 .footer-link{

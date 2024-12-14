@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import logo1 from '../assets/logo1.png';
 import { Link as ScrollLink } from 'react-scroll';
 import {Link} from 'react-router-dom';
 import { FaXmark, FaBars } from 'react-icons/fa6';
 
+import companyicon from '../assets/companyicon.png';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,30 +21,25 @@ const Navbar = () => {
             else{
                 setIsSticky(false);
             }
-            
         };
         window.addEventListener('scroll', handleScroll);
-
         return () => {
             window.addEventListener('scroll', handleScroll);
         }
     });
-
 
     const navItems =[
         {link: "Home", path:"home"},
         {link: "About", path:"about"},
         {link: "Services", path:"services"},
         {link: "Projects", path:"projects"},
-     
     ];
-
 
   return (
     <header className='w-full bg-white fixed top-0 left-0 right-0'>
         <nav className={`py-4 lg:px-14 px-4 ${isSticky ? "sticky top-0 left-0 right-0 border bg-white duration-300" : ""}`}>
             <div className='flex justify-between items-center text-base gap-8'>
-                <a href=''><img src={logo1} alt='' className='w-[70px] h-[70px]'></img></a>
+                <a href=''><img src={companyicon} alt='' className='h-[70px]'></img></a>
 
                 <ul className='md:flex space-x-12 hidden'>
                     {
@@ -52,8 +47,8 @@ const Navbar = () => {
                     }
                 </ul>
 
-                <div className='space-x-12 hidden lg:flex items-center'>
-                    <Link to='/contact' className='btn-primary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutral-700' >Get In Touch</Link>
+                <div className='hidden lg:flex items-center'>
+                    <Link to='/contact' className='btn-primary' >Get In Touch</Link>
                 </div>
 
                 <div className='md:hidden'>
@@ -65,9 +60,9 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className={`space-y-4 px-4 mt-16 py-7 bg-sky-600 ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
+            <div className={`mobile md:hidden space-y-4 px-4 mt-[6.5rem] py-7 bg-sky-600 ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
                 {
-                    navItems.map(({link,path}) => <Link to={path} spy={true} smooth={true} offset={-100} key={path} className='block text-base text-white hover:text-sky-600 first:font-medium cursor-pointer'>{link}</Link>)
+                    navItems.map(({link,path}) => <ScrollLink to={path} spy={true} smooth={true} offset={-100} key={path} className='block text-base text-white hover:text-sky-600 first:font-medium cursor-pointer'>{link}</ScrollLink>)
                 }
             </div>
         </nav>
