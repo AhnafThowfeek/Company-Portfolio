@@ -1,25 +1,29 @@
 import React from 'react';
 
+import aselaImage from "../assets/asela-image.jpg";
+import mulhimaImage from "../assets/mulhima-image.jpg";
+import ahnafImage from "../assets/ahnaf-image.jpg";
+
 
 const About = () => {
     const aboutUs = [
         {
             id:3,
-            image:"/src/assets/asela-image.jpg",
+            image: aselaImage,
             name: "Asela Pasindu Dias",
             title: "Co-Founder in Innenta Solutions, Lead Project Manager and Developer.",
             description:"Having seen many companies struggle to integrate technology into their business models, my vision is to bridge this gap and help them thrive. At Innenta Solutions, we are dedicated to helping businesses flourish through technological innovation."
         },
         {
             id:1,
-            image:"/src/assets/mulhima-image.jpg",
+            image: mulhimaImage,
             name: "Mulhima Jawahir",
             title: "Co-Founder in Innenta Solutions, Lead Project Manager & Client Handler.",
             description:"As one of the founders and project leader at Innenta Solutions, I am dedicated to guiding our team in delivering high-quality web development and software solutions. I work closely with clients to understand their needs, ensuring that we provide innovative technology that drives their success. My goal is to make every client experience smooth, productive, and results-focused."
         },
         {
             id:2,
-            image:"/src/assets/ahnaf-image.jpg",
+            image: ahnafImage,
             name: "Ahnaf Thowfeek",
             title: "Co-Founder in Innenta Solutions, Lead Project Developer.",
             description:"As one of the founders and developers at Innenta Solutions, I am passionate about delivering high-quality web development and software solutions. We are committed to providing innovative technology that drives our clients' success. My goal is to ensure a seamless and productive experience for every client we serve."

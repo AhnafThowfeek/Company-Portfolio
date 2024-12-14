@@ -1,5 +1,12 @@
 import React from 'react';
 
+import image1 from '../assets/1.png';
+import image2 from '../assets/2.png';
+import image3 from '../assets/3.png';
+import image4 from '../assets/4.png';
+
+
+
 const Services = () => {
     const services = [
         {
@@ -45,10 +52,10 @@ const Services = () => {
             <p className='text-neutral-400'>We are working with professional clients.</p>
 
             <div className="[&>img]:w-[60px] [&>img]:h-[60px] lg:[&>img]:w-[80px] lg:[&>img]:h-[80px] my-10 flex flex-warp justify-between lg:justify-center lg:gap-[3rem] items-center">
-                <img src="/src/assets/1.png" alt=""/>
-                <img src="/src/assets/2.png" alt=""/>
-                <img src="/src/assets/3.png" alt=""/>
-                <img src="/src/assets/4.png" alt=""/>
+                <img src={image1} alt=""/>
+                <img src={image2} alt=""/>
+                <img src={image3} alt=""/>
+                <img src={image4} alt=""/>
             </div>
         </div>
 
