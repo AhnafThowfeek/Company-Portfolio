@@ -5,7 +5,7 @@ const About = () => {
     const aboutUs = [
         {
             id:3,
-            image:"/src/assets/pro.JPG",
+            image:"/src/assets/asela-image.jpg",
             name: "Asela Pasindu Dias",
             title: "Co-Founder in Innenta Solutions, Lead Project Manager and Developer.",
             description:"Having seen many companies struggle to integrate technology into their business models, my vision is to bridge this gap and help them thrive. At Innenta Solutions, we are dedicated to helping businesses flourish through technological innovation."
@@ -35,7 +35,7 @@ const About = () => {
             {aboutUs.map(about =>
                 <div key={about.id} className='card relative flex items-center justify-center lg:m-auto px-4 py-8 text-center md:w-[300px] h-[25rem] rounded-md shadow cursor-pointer hover:border-b-4 hover:border-sky-600 overflow-hidden'>
                     <div className='card-front absolute'>
-                        <div className='h-40 w-40  mx-auto'><img src={about.image} alt={`${about.name}`} className='rounded-tl-2xl rounded-br-2xl'/></div>
+                        <div className='h-40 w-40  mx-auto shadow'><img src={about.image} alt={`${about.name}`} className='rounded-tl-2xl rounded-br-2xl shadow'/></div>
                         <h4 className='text-2xl font-bold text-black mt-14 mb-2 px-2'>{about.name}</h4>
                         <h4 className='text-sm text-gray-400'>{about.title}</h4>
                     </div>
