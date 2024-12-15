@@ -17,9 +17,9 @@ function MainLayout() {
     <div id='app' className='text-black'>
       <Navbar />
       <Home/>
-      <About/>
       <Services/>
-      <Projects/>                   
+      <Projects/>
+      <About/>                   
       <MyFooter />
     </div>
    

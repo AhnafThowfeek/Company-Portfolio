@@ -33,9 +33,10 @@ const About = () => {
   return (
     <div id='about' className='about md:px-14 px-4 py-10 max-w-screen-2xl mx-auto'>
         <div className='text-center mb-8'>
-            <h2 className='text-4xl text-neutral-700 font-semibold mb-2'>Our Team</h2>                    
+            <h2 className='text-4xl text-neutral-700 font-semibold mb-2'>Our Team</h2>
+            <p className='text-neutral-400'>We are the founders of the Innenta Solutions company.</p>
         </div>
-        <div className='mt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-10'>      
+        <div className='mt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-10'>
             {aboutUs.map(about =>
                 <div key={about.id} className='card relative flex items-center justify-center lg:m-auto px-4 py-8 text-center md:w-[300px] h-[25rem] rounded-md shadow cursor-pointer hover:border-b-4 hover:border-sky-600 overflow-hidden'>
                     <div className='card-front absolute'>
