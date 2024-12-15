@@ -10,6 +10,7 @@ import About from './components/About';
 import MyFooter from './components/MyFooter';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import SocialMedia from './components/SocialMedia';
 
 function MainLayout() {
   const [count, setCount] = useState(0);
@@ -19,7 +20,8 @@ function MainLayout() {
       <Home/>
       <Services/>
       <Projects/>
-      <About/>                   
+      <About/>
+      <SocialMedia />
       <MyFooter />
     </div>
    
